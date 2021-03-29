@@ -8,7 +8,8 @@
 1. ESIM：最初尝试的模型，疯狂调参后5折效果线上只能到0.88多，最后放弃
 2. ELECTRA/BERT/NEZHA：先pre-train，再fine-tune
 
-线上效果是ELECTRA > NEZHA > BERT，不过我的预训练都没有之前大佬的效果好，目前ELECTRA单折线上0.903，五折0.909，榜上的成绩是这3个模型融合结果
+线上效果是ELECTRA > NEZHA > BERT，不过我的预训练都没有之前大佬的效果好，目前ELECTRA单折线上0.903，五折0.909，榜上的成绩是这3个模型融合结果。
+看之前似乎没人用ELECTRA，我这就推荐一下，主要是速度还行
 
 ## 模型预训练
 1. 均按照[苏神](https://github.com/bojone/oppo-text-match)思路，词频对齐后直接加载模型继续预训练
