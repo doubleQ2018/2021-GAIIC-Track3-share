@@ -20,4 +20,4 @@
 ## 模型finetune
 1. 直接使用CLS层embedding全连接到分类层
 2. 用了CosineAnnealingWarmRestarts的权重衰减
-3. fgm能稳定提升0.3%，我这的epsilon=0.1，提升不明显的可以多试试调调这个参数
+3. fgm能稳定提升0.3%，我这的epsilon=0.1提升最大，提升不明显的可以多试试调调这个参数
