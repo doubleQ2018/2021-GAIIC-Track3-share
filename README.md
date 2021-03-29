@@ -14,7 +14,7 @@
 1. 均按照[苏神](https://github.com/bojone/oppo-text-match)思路，词频对齐后直接加载模型继续预训练
 2. mask直接采用transformer官方动态随机的MLM
 3. 训练参数也是官方的，基本训练200 epochs后拿来用
-4. 参照SWA思路，把预训练最后几轮的model weights拿来取平均作为最后的model是有提升的，不过最后发现和直接把最后几轮的model预测的结果融合效果差不多
+4. 参照SWA思路，把预训练最后几轮的model weights拿来取平均作为最后的model是有提升的，不过最后发现和直接把最后几轮的model预测的结果直接融合效果差不多
 
 ## 模型finetune
 1. 直接使用CLS层embedding全连接到分类层
