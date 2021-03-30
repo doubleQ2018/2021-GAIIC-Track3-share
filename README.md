@@ -4,6 +4,10 @@
 
 很高兴能获得这次的周周星，基本follow了之前周周星大佬们的idea，我这里稍微做个补充：
 
+## 数据
+1. 预训练corpus：单句 + pair(s1 + s2) + 反pair(s2 + s1)
+2. finetune的数据增强：就是大家都介绍过的数据传递，这个给个[参考](https://github.com/huanghuidmml/epidemicTextMatch/blob/master/code/data_aug.py)
+
 ## 模型选择
 1. ESIM：最初尝试的模型，疯狂调参后5折效果线上只能到0.88多，最后放弃
 2. ELECTRA/BERT/NEZHA：先pre-train，再fine-tune
